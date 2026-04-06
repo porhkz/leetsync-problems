@@ -6,10 +6,4 @@ class Solution:
         for num in candies:
             max_candy = max(max_candy, num)
 
-        for i in range(len(candies)):
-            if candies[i] + extraCandies >= max_candy:
-                result.append(True)
-            else:
-                result.append(False)
-
-        return result
+        return [num + extraCandies >= max_candy for num in candies]
