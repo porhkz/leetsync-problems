@@ -2,7 +2,7 @@ class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         for i in range(len(flowerbed)):
             if n == 0:
-                return True
+                break
 
             if flowerbed[i] == 1:
                 continue
