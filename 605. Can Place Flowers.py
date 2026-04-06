@@ -16,7 +16,6 @@ class Solution:
                     continue
 
             n = n - 1
-            print(i)
 
             flowerbed[i] = 1
 
